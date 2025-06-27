@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Help</title> <!-- this is for window title -->
+    <link rel="'icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}} <!-- this is how we use and link partial header double flower brace and > header name -->
+        <h1>{{title}} Page!</h1> <!-- this is how we can access dynamic content sent via render's 2nd parameter object -->
+        <p>Good Morning {{user}}, Have a Good Day!!!!</p>
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>
