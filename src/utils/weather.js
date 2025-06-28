@@ -12,12 +12,13 @@ const getWeather = (lat, long, callback) => {
             callback('Invalid location, Please try with proper location')
         } else {
 
-            const { feelslike_c: feelslike, temp_c: temp } = body.current
+            const { feelslike_c: feelslike, temp_c: temp, humidity } = body.current
 
             callback(undefined, {
                 temp,
                 feelslike,
-                condition: body.current.condition.text
+                condition: body.current.condition.text,
+                humidity
             })
 
         }
